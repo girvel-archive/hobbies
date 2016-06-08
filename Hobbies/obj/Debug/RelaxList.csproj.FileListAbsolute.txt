@@ -1,0 +1,2 @@
+D:\projects\small apps\RelaxList\RelaxList\bin\Debug\RelaxList.exe.config
+D:\projects\small apps\RelaxList\RelaxList\bin\Debug\Hobbies.exe.config
