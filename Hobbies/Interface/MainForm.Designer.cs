@@ -34,6 +34,8 @@
             this.menuItemRemoveHobby = new System.Windows.Forms.ToolStripMenuItem();
             this.checkedListBoxHobbies = new System.Windows.Forms.CheckedListBox();
             this.buttonRefresh = new System.Windows.Forms.Button();
+            this.mainOpenFileDialog = new System.Windows.Forms.OpenFileDialog();
+            this.mainSaveFileDialog = new System.Windows.Forms.SaveFileDialog();
             this.menuStripMain.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -81,12 +83,14 @@
             this.menuItemSave.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
             this.menuItemSave.Size = new System.Drawing.Size(159, 22);
             this.menuItemSave.Text = "Save";
+            this.menuItemSave.Click += new System.EventHandler(this.menuItemSave_Click);
             // 
             // menuItemClose
             // 
             this.menuItemClose.Name = "menuItemClose";
             this.menuItemClose.Size = new System.Drawing.Size(159, 22);
             this.menuItemClose.Text = "Close";
+            this.menuItemClose.Click += new System.EventHandler(this.menuItemClose_Click);
             // 
             // menuItemEdit
             // 
@@ -164,6 +168,8 @@
         private System.Windows.Forms.ToolStripMenuItem menuItemAddHobby;
         private System.Windows.Forms.ToolStripMenuItem menuItemRemoveHobby;
         private System.Windows.Forms.Button buttonRefresh;
+        private System.Windows.Forms.OpenFileDialog mainOpenFileDialog;
+        private System.Windows.Forms.SaveFileDialog mainSaveFileDialog;
     }
 }
 

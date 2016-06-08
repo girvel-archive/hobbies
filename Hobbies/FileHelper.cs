@@ -12,7 +12,11 @@ namespace Hobbies {
 
         public static IEnumerable<Hobby> FromStr(string str) {
             Console.WriteLine(str);
-            return str.Split('\n').Select(hobby => new Hobby(hobby.Split(':')[0], Convert.ToInt32(hobby.Split(':')[1])));
+
+            return 
+                from hobby in str.Split('\n')
+                where hobby != string.Empty
+                select new Hobby(hobby.Split(':')[1], Convert.ToInt32(hobby.Split(':')[0]));
         }
     }
 }
